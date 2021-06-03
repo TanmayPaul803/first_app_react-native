@@ -151,12 +151,20 @@ const Login = ({navigation}) => {
             )}
           </TouchableOpacity>
         </View>
+
+        {/* Sign In Button */}
+
         <View style={styles.button}>
-          <LinearGradient colors={['#ff96ad', '#bf1363']} style={styles.signIn}>
-            <Text style={styles.button_text}>Sign In</Text>
-          </LinearGradient>
+          <TouchableOpacity>
+            <LinearGradient
+              colors={['#ff96ad', '#bf1363']}
+              style={styles.signIn}>
+              <Text style={styles.button_text}>Sign In</Text>
+            </LinearGradient>
+          </TouchableOpacity>
 
           {/* Sign up Button */}
+
           <TouchableOpacity
             style={styles.signUp}
             onPress={() => {
